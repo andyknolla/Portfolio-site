@@ -39,5 +39,6 @@ gem 'mini_magick', '~> 4.7', '>= 4.7.2'
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.10'
 gem 'gritter', '~> 1.2'
+gem 'twitter', '~> 6.1'
 
 ruby "2.4.1"
