@@ -64,7 +64,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-      js add_gritter(msg, :title => "Please pay attention!")
+      js add_gritter(msg)
   end
 
 
