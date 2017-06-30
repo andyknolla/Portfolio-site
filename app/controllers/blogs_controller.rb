@@ -20,7 +20,7 @@ class BlogsController < ApplicationController
   # GET /blogs/1.json
   def show
     if logged_in?(:site_admin) || @blog.published?
-      @blog = Blog.includes(:comments).friendly.find(params[:id])
+      @blog = Blog.includes(:comments).find(params[:id])
       @comment = Comment.new
 
       @page_title = @blog.title
@@ -91,7 +91,7 @@ class BlogsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_blog
-      @blog = Blog.friendly.find(params[:id])
+      @blog = Blog.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
