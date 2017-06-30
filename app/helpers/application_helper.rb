@@ -71,8 +71,4 @@ module ApplicationHelper
       js add_gritter(msg)
   end
 
-
-
-
-
 end

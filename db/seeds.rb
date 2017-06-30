@@ -1,10 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+User.create!(
+  email: "admin@example.com",
+  password: "password123",
+  password_confirmation: "password123",
+  name: "Admin User",
+  roles: "site_admin"
+)
+puts "1 Admin user created"
+
+User.create!(
+  email: "user@test.com",
+  password: "password123",
+  password_confirmation: "password123",
+  name: "Regular User",
+)
+puts "1 regular user created"
+
 
 3.times do |topic|
   Topic.create!(
@@ -14,15 +24,48 @@ end
 
 puts "3 topics created"
 
-10.times do |blog|
+3.times do |blog|
   Blog.create!(
     title: "My Blog Post #{blog}",
-    body: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    body: "Crash pad cold shut bi-pattern chains a tagline wall crack limestone aid.  Corner spire tips crux rope drag sequence and scary knife-blade slot creek.  Auto-block send the ‘biner crystal, anchor descent and equalette.
+     Sandbag buttress puffy the carabiner bomber nut on number 3 splitter stem dihedral flare, clean choss solutions and Camalot whipper bolt.  Oldschool tape glove crush and slabby topo granite is coreshot redpoint.  Joshua Tree 5.9, manky offwidth guidebook and gnarly jumar clipping stance, pro tipped out sketchy bombproof loose block rap ring.  Quickdraw the flag crank, so trad deck harness a chalk bag stiff locker.  Dirt bag fist crack dyno crimp and spectra match pinch tuff project.  Match fit gneiss lobe and offset approach flake on crag dog bentgate, armbar butterfly pitch, fingerlock headjam.  Figure eight sticky rubber pendulum bucket and good ledge stone route elvis leg traverse. ",
+    status: 0,
     topic_id: Topic.last.id
   )
 end
 
-puts "10 blog posts created"
+puts "3 blog draft posts created"
+
+7.times do |blog|
+  Blog.create!(
+    title: "My Blog Post #{blog}",
+    body: "Joshua Tree 5.9, manky offwidth guidebook and gnarly jumar clipping stance, pro tipped out sketchy bombproof loose block rap ring.  Quickdraw the flag crank, so trad deck harness a chalk bag stiff locker.  Dirt bag fist crack dyno crimp and spectra match pinch tuff project.  Match fit gneiss lobe and offset approach flake on crag dog bentgate, armbar butterfly pitch, fingerlock headjam.  Figure eight sticky rubber pendulum bucket and good ledge stone route elvis leg traverse.  Spooky poop tube a crimp ladder daisy chain, etrier tower placement and hueco gri-gri chickenhead sling.  Lead piton rurp on klemheist layback bail.  Wagbag is mantle knot v-thread monstercam gear for verglase dome sandwiches.  Clifbar ice tool solo dike (prusik runout frontpoint pump) undercling barfie.
+    Headwalls and nut-tools on belay dogbone sloper chalk, fixed piece thumbcatch gobie jug.  Chickenwing bootie hex chimney, classic RP portaledge.  Kingswing floss rock and tricam pocket trigger boulder.  Double axle el cap chockstones and wiregate frontpoint rand for access fund--cinch alien rappel device, a rope stretch brake hand cordalette master point.  Clove hitch wire locker roof bulge, toe hook edge smear, arete pig TC Pro, knee drop haul ascender.  Static top ropes fixed pins inversion valley. Lost arrow fist stack a cord double grapevine barndoor bashie rack.  But stopper campus grovel bong and thrutch mono munter proj.  Redpoint screamer burly z-clip open book seam and lockoff highball is gaston flash epic.
+    ",
+    status: 1,
+    topic_id: Topic.first.id
+  )
+end
+
+puts "7 blog published posts created"
+
+5.times do |comment|
+  Comment.create!(
+    content: "Dirkaam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+    blog_id: 1,
+    user_id: 1
+  )
+end
+puts "5 comments created, 1 for each of the first 5 blogs"
+
+5.times do |comment|
+  Comment.create!(
+    content: "Criosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil mole voluptas nulla pariatur?",
+    blog_id: 2,
+    user_id: 2
+  )
+end
+puts "5 comments created, 1 for each of the first 5 blogs"
 
 5.times do |skill|
   Skill.create!(
