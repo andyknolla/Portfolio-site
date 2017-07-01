@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: DevcampPortfolio_production
-  username: DevcampPortfolio
+  database: AndyKPortfolio_production
+  username: AndyK 
   password: <%= ENV['DEVCAMPPORTFOLIO_DATABASE_PASSWORD'] %>
