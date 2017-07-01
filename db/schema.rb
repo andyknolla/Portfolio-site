@@ -18,11 +18,11 @@ ActiveRecord::Schema.define(version: 20170127191418) do
   create_table "blogs", id: :serial, force: :cascade do |t|
     t.string "title"
     t.text "body"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "slug"
     t.integer "status", default: 0
     t.integer "topic_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+
     t.index ["topic_id"], name: "index_blogs_on_topic_id"
   end
 
