@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: DevcampPortfolio_development
+  database: DevcampPortfolio_development4
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
