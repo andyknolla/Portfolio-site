@@ -3,7 +3,7 @@ module ApplicationCable
   class Connection < ActionCable::Connection::Base
     identified_by :current_user
 
-    def GuestUser
+    def guest_user
       guest = GuestUser.new
       guest.id = guest.object_id
       guest.name = "Guest User"
