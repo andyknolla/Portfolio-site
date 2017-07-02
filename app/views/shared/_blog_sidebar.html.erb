@@ -1,5 +1,5 @@
 <div class="col-sm-3 offset-sm-1 blog-sidebar">
-  <div class="sidebar-module sidebar-module-inset">
+  <div class="sidebar-module">
     <h4>About</h4>
     <p>Writing spurs thinking, thinking inspires growth, sharing promotes learning.</p>
   </div>
@@ -8,24 +8,26 @@
 
   <div class="sidebar-module">
     <h4>Topics</h4>
-    <% @set_sidebar_topics.each do |topic| %>
-      <p> <%= link_to topic.title, topic_path(topic) %></p>
-    <% end %>
+    <ul>
+      <% @set_sidebar_topics.each do |topic| %>
+        <li> <%= link_to topic.title, topic_path(topic) %></li>
+      <% end %>
+    </ul>
   </div>
 
   <div class="sidebar-module">
     <h4>Archives</h4>
-    <ol class="list-unstyled">
+    <ul class="list-unstyled">
       <li><a href="#">May 2017</a></li>
       <li><a href="#">June 2017</a></li>
-    </ol>
+    </ul>
   </div>
   <div class="sidebar-module">
     <h4>Elsewhere</h4>
-    <ol class="list-unstyled social-links">
+    <ul class="list-unstyled social-links">
       <li><a href="https://github.com/andyknolla"><%= fa_icon "github" %></a></li>
       <li><a href="https://www.linkedin.com/in/andyknolla/"><%= fa_icon "linkedin" %></a></li>
       <li><a href="https://twitter.com/AndrewKnolla"><%= fa_icon "twitter" %></a></li>
-    </ol>
+    </ul>
   </div>
 </div>

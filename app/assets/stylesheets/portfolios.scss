@@ -17,7 +17,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  font-size: 1.2rem;
   color: #fff;
   transition: .2s ease;
 }
@@ -33,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(236,173,80);
   &:hover {
     transform: none;
+    color: gray;
   }
 }
 .nav-link.active:after {
@@ -161,6 +161,9 @@ a.navbar-brand {
   padding-bottom: 0;
   background: rgb(55,34,91);
   padding-bottom: 0;
+  li {
+    font-size: 1.4rem;
+  }
 }
 
 .btn.btn-primary {
@@ -203,5 +206,11 @@ a.navbar-brand {
 @media (min-width: 62em) {
   .portfolio-container img {
     width: 45vw;
+  }
+}
+
+@media (min-width: 62em) {
+  .nav-links {
+    margin-left: 35%;
   }
 }
