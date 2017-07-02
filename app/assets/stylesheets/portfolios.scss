@@ -11,6 +11,45 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Ubuntu', sans-serif;
 }
 
+
+/* Nav links */
+.nav-link {
+  position: relative;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: .2s ease;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: white;
+  background-color: transparent;
+  transform: translateY(-5px );
+}
+
+/* Active state gets a caret at the bottom */
+.nav-link.active {
+  color: rgb(236,173,80);
+  &:hover {
+    transform: none;
+  }
+}
+.nav-link.active:after {
+  position: absolute;
+  color: rgb(226,226,226);
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -19,7 +58,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 6rem;
   padding-bottom: 2.5rem;
   margin-bottom: 0;
-  background-color: rgb(55,34,91);
+  background-color: rgb(226,226,226);
+  border-radius: 0;
 }
 
 .jumbotron p:last-child {
@@ -29,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 .jumbotron-heading {
   font-weight: 300;
   font-size: 3rem;
-  color: rgb(132,31,31);
+  color: rgb(55,34,91);
 }
 
 .jumbotron .container {
@@ -49,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
-  background: rgb(132,31,31);
+  background: rgb(70,61,86);
 }
 
 .card > img {
@@ -59,6 +99,9 @@ h1, h2, h3, h4, h5, h6 {
 .card-text {
   font-size: 1.3rem;
   color: #fff;
+  a {
+    color: white;
+  }
 }
 
 footer {
@@ -72,6 +115,17 @@ footer p {
 
 /* Custom Styles */
 
+.blog-nav {
+  margin-bottom: 0;
+  background: rgb(55,34,91);
+  padding-bottom: 0;
+}
+
+a.navbar-brand {
+  color: white;
+  font-size: 2rem;
+}
+
 .portfolio-form {
   padding: 15px;
 }
@@ -81,15 +135,20 @@ footer p {
 }
 
 .portfolio-subheading {
-  color: rgb(174,174,174);
+  color: black;
+  padding-top: 0.7rem;
 }
 
 .masthead-links {
   padding-top: 45px;
 }
 
+.navbar-brand {
+  font-size: 2rem;
+}
+
 .btn.btn-primary {
-  background: rgb(132,31,31);
+  background: rgb(55,34,91);
   border-color: rgb(132,31,31);
   color: #eee;
 }

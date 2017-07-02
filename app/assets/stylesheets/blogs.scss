@@ -53,20 +53,26 @@ h6, .h6 {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #cdddeb;
+  color: #fff;
+  transition: .2s ease;
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
+  color: white;
   background-color: transparent;
+  transform: translateY(-5px );
 }
 
 /* Active state gets a caret at the bottom */
 .nav-link.active {
-  color: #fff;
+  color: rgb(236,173,80);
+  &:hover {
+    transform: none;
+  }
 }
 .nav-link.active:after {
   position: absolute;
+  color: white;
   bottom: 0;
   left: 50%;
   width: 0;
@@ -198,6 +204,8 @@ h6, .h6 {
 
 .blog-nav {
   margin-bottom: 35px;
+  background: rgb(55,34,91);
+  padding-bottom: 0;
 }
 
 .blog-sidebar-source {
@@ -205,9 +213,14 @@ h6, .h6 {
 }
 
 .blog-post > .blog-post-title > a, .blog-main > h2, .blog-title {
-  color: rgb(79,93,79);
+  color: rgb(55,34,91);
 }
 
 .sidebar-module a, .blog-header a, .breadcrumb-item {
-  color: rgb(137,18,18);
+  color: rgb(55,34,91);
+}
+
+a.navbar-brand {
+  color: white;
+  font-size: 2rem;
 }
