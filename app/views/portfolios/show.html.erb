@@ -4,7 +4,7 @@
     <div class="col-md-7">
       <%= image_tag portfolio_img(@portfolio_item.main_image, 'main') %>
     </div>
-    <div class="col-md-5">
+    <div class="col-md-5 portfolio-item-desc">
       <h1><%= @portfolio_item.title %></h1>
       <em><%= @portfolio_item.subtitle %></em>
       <p><%= @portfolio_item.body %></p>
@@ -16,7 +16,7 @@
       <% end %>
 
       <% if logged_in?(:site_admin) %>
-        <div> 
+        <div>
           <%= link_to "Edit Item", edit_portfolio_path(@portfolio_item), class: "btn btn-warning" %>
         </div>
       <% end %>

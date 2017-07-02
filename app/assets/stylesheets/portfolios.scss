@@ -125,7 +125,7 @@ a.navbar-brand {
 }
 
 .portfolio-container {
-  padding-top: 30px;
+  padding: 30px 30px;;
 }
 
 .portfolio-subheading {
@@ -173,4 +173,35 @@ a.navbar-brand {
   border-color: rgb(100,100,100);
   color: #eee;
   margin-left: 15px;
+}
+
+.portfolio-item-desc {
+  text-align: left;
+}
+
+.portfolio-container img {
+  width: 70vw;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+@media (min-width: 30em) {
+  .portfolio-container img {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 48em) {
+  .portfolio-container {
+    margin: auto 50px 30px;
+    padding: 15px 0;
+    img {
+      width: 45vw;
+    }
+  }
+}
+
+@media (min-width: 62em) {
+  .portfolio-container img {
+    width: 45vw;
+  }
 }
