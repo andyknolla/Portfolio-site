@@ -193,9 +193,17 @@ h1, h2, h3, h4, h5, h6 {
   float: none;
 }
 
-.app-nav span {
+.app-nav {
+  // add color/style rules from nav-purple
+  margin-top: 42px;
+  text-align: center;
+  span {
   margin-left: 15px;
   margin-right: 15px;
+  }
+  li {
+    font-size: 1.4rem;
+  }
 }
 
 #background {
@@ -260,12 +268,15 @@ h1, h2, h3, h4, h5, h6 {
 .cover-heading {
   font-size: 3rem;
 }
+
 .cover-subheading {
   font-size: 1.5rem;
 }
+
 #playVid {
   display: none;
 }
+
 .vid-control {
   display: flex;
   align-self: flex-end;
@@ -282,6 +293,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-brand {
   font-size: 2rem;
   margin-top: -10px;
+  margin-left: 6%;
 }
 
 .contact-info p {
@@ -292,16 +304,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .user-bar {
+  margin-bottom: 0;;
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  position: fixed;
   background: rgba(27,27,27, 0.6);
   .user-bar-items {
     display: flex;
     justify-content: flex-end;
-    padding: 4px 30px 3px 0;
+    padding: 4px 40px 3px 0;
   }
   .login-link {
+    margin-left: 15px;
     color: rgb(238,238,238);
     padding-top: 3px;
     transition: .2s ease;
@@ -318,10 +333,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.masthead .inner {
-  padding-top: 3.5rem;
-}
-
 .nav-toggle {
   color: rgb(238,238,238);
   margin-top: -6px;
@@ -329,4 +340,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-cover-container {
   margin: 400px auto 0;
+}
+
+@media (min-width: 30em) {
+  .cover-container {
+    margin-top: 165px;
+  }
+  .app-footer {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 40em) {
+  .app-nav {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 62em) {
+  .app-nav ul {
+    margin-left: 35%;
+  }
 }

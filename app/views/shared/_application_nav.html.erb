@@ -1,10 +1,19 @@
-<div class="masthead clearfix">
+<!-- <div class="masthead clearfix app-nav">
   <div class="inner">
-    <%= link_to "Andy", root_path, class: 'navbar-brand' %>
-    <nav class="nav nav-masthead app-nav">
-
-      <%= nav_helper 'nav-link', 'span' %>
+    <nav class="nav nav-masthead">
 
     </nav>
   </div>
-</div>
+</div> -->
+
+
+<nav class="navbar navbar-toggleable-md navbar-dark app-nav">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><%= fa_icon "bars 2x", class: 'nav-toggle' %>
+  </button>
+  <%= link_to 'Andy Knolla', root_path, class: 'navbar-brand' %>
+  <div class='collapse navbar-collapse' id='navbarSupportedContent'>
+    <ul class='navbar-nav mr-auto mt-2 mt-md-0 nav-links'>
+      <%= nav_helper 'nav-link', 'li' %>
+    </ul>
+  </div>
+</nav>
