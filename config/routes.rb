@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  # get 'landing/home'
+
   resources :topics, only: [:index, :show]
 
   resources :comments
@@ -21,5 +23,5 @@ Rails.application.routes.draw do
 
   mount ActionCable.server => '/cable'
 
-  root to: 'pages#home'
+  root to: 'landing#home'
 end

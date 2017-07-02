@@ -121,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .cover {
-  padding: 0 1.5rem;
+  padding: 0;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
@@ -325,4 +325,15 @@ h1, h2, h3, h4, h5, h6 {
 .nav-toggle {
   color: rgb(238,238,238);
   margin-top: -6px;
+}
+
+.below-fold {
+  height: 500px;
+  width: 100%;
+  background: rgba(255,255,255, 0.5);
+  margin: 400px 0 200px;
+}
+
+.home-cover-container {
+  margin: 400px auto 0;
 }
