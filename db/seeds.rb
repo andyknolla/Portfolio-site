@@ -47,25 +47,25 @@ puts "3 blog draft posts created"
   )
 end
 
-puts "7 blog published posts created"
+puts "7 published blog posts created"
 
 5.times do |comment|
   Comment.create!(
     content: "Dirkaam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
-    blog_id: 1,
+    blog_id: 10,
     user_id: 1
   )
 end
-puts "5 comments created, 1 for each of the first 5 blogs"
+puts "5 comments created for blog_id 10"
 
 5.times do |comment|
   Comment.create!(
     content: "Criosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil mole voluptas nulla pariatur?",
-    blog_id: 2,
+    blog_id: 9,
     user_id: 2
   )
 end
-puts "5 comments created, 1 for each of the first 5 blogs"
+puts "5 comments created for blog_id 9"
 
 5.times do |skill|
   Skill.create!(
@@ -76,29 +76,29 @@ end
 
 puts "5 skills created"
 
-8.times do |portfolio_item|
+3.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
-    subtitle: "Ruby on Rails",
+    subtitle: "Subtitle: Ruby on Rails",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     main_image: "http://placehold.it/600x400",
     thumb_image: "http://placehold.it/350x200"
   )
 end
 
-puts "9 portfolio items created"
+puts "3 portfolio items created for subtitle 'Ruby on Rails'"
 
 2.times do |portfolio_item|
   Portfolio.create!(
     title: "Portfolio title: #{portfolio_item}",
-    subtitle: "Angular",
+    subtitle: "Subtitle: React",
     body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     main_image: "http://placehold.it/600x400",
     thumb_image: "http://placehold.it/350x200"
   )
 end
 
-puts "9 portfolio items created"
+puts "2 portfolio items created for subtitle 'React'"
 
 3.times do |technology|
   Portfolio.last.technologies.create!(

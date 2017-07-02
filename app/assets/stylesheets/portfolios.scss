@@ -17,9 +17,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron {
   padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-bottom: 2.5rem;
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: rgb(55,34,91);
 }
 
 .jumbotron p:last-child {
@@ -28,6 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron-heading {
   font-weight: 300;
+  font-size: 3rem;
+  color: rgb(132,31,31);
 }
 
 .jumbotron .container {
@@ -38,15 +40,16 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-color: #eee;
 }
 
 .card {
   float: left;
-  width: 33.333%;
+  width: 100%;
   padding: .75rem;
   margin-bottom: 2rem;
   border: 0;
+  background: rgb(132,31,31);
 }
 
 .card > img {
@@ -54,7 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-text {
-  font-size: 85%;
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 footer {
@@ -75,7 +79,23 @@ footer p {
 .portfolio-container {
   padding-top: 30px;
 }
+
+.portfolio-subheading {
+  color: rgb(174,174,174);
+}
+
+.masthead-links {
+  padding-top: 45px;
+}
+
 .btn.btn-primary {
-  background: rgb(30,73,150);
-  border-color: rgb(30,73,150);
+  background: rgb(132,31,31);
+  border-color: rgb(132,31,31);
+  color: #eee;
+}
+.btn.btn-secondary {
+  background: rgb(100,100,100);
+  border-color: rgb(100,100,100);
+  color: #eee;
+  margin-left: 15px;
 }
