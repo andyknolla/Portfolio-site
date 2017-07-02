@@ -1,5 +1,5 @@
 User.create!(
-  email: "admin@example.com",
+  email: "andyknolla@gmail.com",
   password: "password123",
   password_confirmation: "password123",
   name: "Admin User",
@@ -8,7 +8,7 @@ User.create!(
 puts "1 Admin user created"
 
 User.create!(
-  email: "user@test.com",
+  email: "user@example.com",
   password: "password123",
   password_confirmation: "password123",
   name: "Regular User",
