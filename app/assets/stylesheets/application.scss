@@ -1,5 +1,6 @@
 @import "bootstrap";
 @import "gritter";
+@import "font-awesome";
 
 /*
  * Globals
@@ -283,11 +284,45 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -10px;
 }
 
-
-
 .contact-info p {
   text-shadow: none;
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 1rem;
+}
+
+.user-bar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  background: rgba(27,27,27, 0.6);
+  .user-bar-items {
+    display: flex;
+    justify-content: flex-end;
+    padding: 4px 30px 3px 0;
+  }
+  .login-link {
+    color: rgb(238,238,238);
+    padding-top: 3px;
+    transition: .2s ease;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  .user-bar-gravatar {
+    margin-left: 10px;
+    margin-right: 25px;
+  }
+  .welcome {
+    color: rgb(238,238,238);
+  }
+}
+
+.masthead .inner {
+  padding-top: 3.5rem;
+}
+
+.nav-toggle {
+  color: rgb(238,238,238);
+  margin-top: -6px;
 }

@@ -10,10 +10,12 @@
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Athiti|Ubuntu" rel="stylesheet">
     <%= favicon_link_tag 'favicon.ico' %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
+    <%= render "shared/user_bar" %>
 
     <%= render "shared/blog_nav" %>
 

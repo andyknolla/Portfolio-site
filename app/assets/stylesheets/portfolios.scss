@@ -115,12 +115,6 @@ footer p {
 
 /* Custom Styles */
 
-.blog-nav {
-  margin-bottom: 0;
-  background: rgb(55,34,91);
-  padding-bottom: 0;
-}
-
 a.navbar-brand {
   color: white;
   font-size: 2rem;
@@ -145,6 +139,29 @@ a.navbar-brand {
 
 .navbar-brand {
   font-size: 2rem;
+}
+
+.user-bar {
+  background: image-url('graphic_strip.png') no-repeat;
+  position: relative;
+  margin-bottom: auto;
+}
+
+.user-bar-shade {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  // z-index: -100;
+  background: rgba(27,27,27, 0.75);
+}
+
+.blog-nav {
+  margin-top: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0;
+  background: rgb(55,34,91);
+  padding-bottom: 0;
 }
 
 .btn.btn-primary {

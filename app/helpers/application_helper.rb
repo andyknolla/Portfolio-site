@@ -16,6 +16,14 @@ module ApplicationHelper
     end
   end
 
+  def gravatar_helper user, size, placement
+    image_tag "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(user.email)}", width: size, class: placement
+  end
+
+  def search_helper
+
+  end
+
   def nav_items
     [
       {
@@ -47,9 +55,9 @@ module ApplicationHelper
 
   def nav_helper style, tag_type
     nav_links = ''
-
+    tag_class = 'nav-item' if tag_type == 'li'
     nav_items.each do |item|
-      nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
+      nav_links << "<#{tag_type} class='#{tag_class}' ><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
     end
 
     nav_links.html_safe
