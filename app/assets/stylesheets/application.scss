@@ -201,13 +201,12 @@ h1, h2, h3, h4, h5, h6 {
   li {
     font-size: 1.4rem;
     margin-left: 20px;
-
     a {
       padding-top: 5px;
       padding-bottom: 3px;
       transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       &:hover {
-        transform: translateY(-8px) rotate(2deg);
+        transform: translateY(-5px) rotate(2deg);
       }
     }
   }
@@ -324,7 +323,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  position: fixed;
   background: rgba(27,27,27, 0.6);
   .user-bar-items {
     display: flex;
@@ -360,6 +358,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-cover-container {
   margin: 400px auto 0;
+}
+
+@media (max-width: 30em) {
+  .cover-container {
+    margin-top: 165px;
+  }
 }
 
 @media (min-width: 30em) {

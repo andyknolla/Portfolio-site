@@ -63,6 +63,10 @@ module ApplicationHelper
     nav_links.html_safe
   end
 
+  def nav_style_helper style
+    style
+  end
+
   def active? path
     "active" if current_page? path
   end

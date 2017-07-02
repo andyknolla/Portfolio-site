@@ -15,23 +15,17 @@
 
   <body>
     <%= render "shared/user_bar" %>
-    <%= render 'shared/blog_nav' %>
+    <%= render partial: 'shared/app_nav', locals: { style: 'blog-nav'} %>
     <%= render 'shared/blog_masthead' %>
 
     <div class="container">
-
       <div class="row">
-
         <%= yield %>
-
         <%= render 'shared/blog_sidebar' %>
-
       </div>
-
       <%= render 'shared/blog_footer' %>
-
       <% alert %>
-
     </div>
+
   </body>
 </html>
