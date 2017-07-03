@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title><%= @page_title %></title>
-
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Athiti|Ubuntu" rel="stylesheet">
     <%= favicon_link_tag 'favicon.ico' %>
@@ -17,14 +14,11 @@
   <body>
     <%= render "shared/user_bar" %>
     <%= render partial: "shared/application_nav", locals: { style: 'blog-nav'} %>
-
     <%= render "shared/portfolio_masthead" unless logged_in?(:site_admin) %>
-<!--  yeild contains .album -->
+
     <%= yield %>
 
     <%= render "shared/portfolio_footer" %>
-
     <% alert %>
-
   </body>
 </html>

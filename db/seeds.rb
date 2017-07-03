@@ -15,7 +15,6 @@ User.create!(
 )
 puts "1 regular user created"
 
-
 3.times do |topic|
   Topic.create!(
     title: "Topic #{topic}"
@@ -56,6 +55,7 @@ puts "7 published blog posts created"
     user_id: 1
   )
 end
+
 puts "5 comments created for blog_id 10"
 
 5.times do |comment|
@@ -65,6 +65,7 @@ puts "5 comments created for blog_id 10"
     user_id: 2
   )
 end
+
 puts "5 comments created for blog_id 9"
 
 5.times do |skill|

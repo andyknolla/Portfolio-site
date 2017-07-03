@@ -10,5 +10,3 @@ class PagesController < ApplicationController
     @tweets = SocialTool.twitter_search
   end
 end
-
-# anything in each of these actions will be run when the matching route is hit. ie pages/home will run 'home' code

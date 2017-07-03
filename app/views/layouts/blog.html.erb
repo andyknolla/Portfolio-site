@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'favicon.ico' %>
@@ -12,21 +11,19 @@
     <%= stylesheet_link_tag    'blogs', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <%= render "shared/user_bar" %>
     <%= render partial: 'shared/application_nav', locals: { style: 'blog-nav'} %>
     <%= render 'shared/blog_masthead' unless logged_in?(:site_admin) %>
-
     <div class="container">
       <div class="row">
-        <!--  yield contains .blog-main and cols  -->
+
         <%= yield %>
+        
         <%= render 'shared/blog_sidebar' %>
       </div>
       <%= render 'shared/blog_footer' %>
       <% alert %>
     </div>
-
   </body>
 </html>

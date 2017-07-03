@@ -5,7 +5,6 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag "profile.jpg", width: 250, alt: "profile image", class: 'profile-image' %>
-
         <div class='skills'>
           <% @skills.each do |skill| %>
             <div class='skill'>
@@ -17,7 +16,8 @@
                   aria-valuenow="<%= skill.percent_utilized %>"
                   aria-valuemax="100"
                   style="width: <%= skill.percent_utilized %>%"
-                ></div>
+                >
+                </div>
               </div>
             </div>
           <% end %>

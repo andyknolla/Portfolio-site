@@ -1,11 +1,7 @@
 class PortfoliosController < ApplicationController
-  ## added following b/c I was getting error: ruby ActionController::InvalidAuthenticityToken
-  ## after adding default image values to portfolio create action.
-  skip_before_action :verify_authenticity_token
   layout "portfolio"
 
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :update, :edit, :sort]}, site_admin: :all
-  ####################
 
   def index
     @portfolio_items = Portfolio.by_position
@@ -19,22 +15,12 @@ class PortfoliosController < ApplicationController
     render nothing: true
   end
 
-# for practice only
-  def angular_items
-    @angular_items = Portfolio.angular
-  end
-  def ruby
-    @ruby_items = Portfolio.ruby_on_rails_portfolio_items
-  end
-  #################
-
   def new
     @portfolio_item = Portfolio.new
   end
 
   def create
     @portfolio_item = Portfolio.new(portfolio_params)
-    # strong params ^
 
     respond_to do |format|
       if @portfolio_item.save
@@ -70,7 +56,7 @@ class PortfoliosController < ApplicationController
 
     @portfolio_item.destroy
     respond_to do |format|
-      format.html { redirect_to portfolios_url, notice: 'Porfolio item was successfully destroyed.' }
+      format.html { redirect_to portfolios_url, notice: 'Portfolio item was successfully destroyed.' }
     end
   end
 

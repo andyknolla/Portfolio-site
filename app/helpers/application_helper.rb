@@ -20,10 +20,6 @@ module ApplicationHelper
     image_tag "https://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(user.email)}", width: size, class: placement
   end
 
-  def search_helper
-
-  end
-
   def nav_items
     [
       {
@@ -59,7 +55,6 @@ module ApplicationHelper
     nav_items.each do |item|
       nav_links << "<#{tag_type} class='#{tag_class}' ><a href='#{item[:url]}' class='#{style} #{active? item[:url]}'>#{item[:title]}</a></#{tag_type}>"
     end
-
     nav_links.html_safe
   end
 
@@ -83,5 +78,4 @@ module ApplicationHelper
   def alert_generator msg
       js add_gritter(msg, :time => 3000)
   end
-
 end

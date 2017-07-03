@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
-  # get 'landing/home'
-
   resources :topics, only: [:index, :show]
-
   resources :comments
-  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
-
   resources :portfolios, except: [:show] do
     put :sort, on: :collection
   end
+
+  devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' }
 
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'about-me', to: 'pages#about'

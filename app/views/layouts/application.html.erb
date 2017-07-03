@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-
     <%= favicon_link_tag 'favicon.ico' %>
     <link href="https://fonts.googleapis.com/css?family=Athiti|Ubuntu" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-
     <%= render "shared/user_bar" %>
-
     <%= render partial: "shared/application_nav", locals: { style: "app-nav"} %>
     <div class="container cover-container">
 
-      <%= yield %>     <!--  yield contains .app-card-container for About and Contact or .inner, .cover for home-->
-
+      <%= yield %>
+      
       <%= video_tag(
         'portfolio_bg_vid_medium.mp4',
         id: 'background',
@@ -28,12 +24,10 @@
         loop: true,
         muted: true,
         controls: true,
-        # poster: 'portfolio_bg_image.png'
       )
       %>
       <%= render "shared/application_footer" %>
       <%= alert %>
     </div>
-
   </body>
 </html>

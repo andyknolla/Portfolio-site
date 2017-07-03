@@ -4,7 +4,4 @@ class ApplicationController < ActionController::Base
   include SetSource
   include CurrentUserConcern
   include DefaultPageContent
-
 end
-
-# all other controllers inherit from this controller.
