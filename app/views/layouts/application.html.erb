@@ -16,11 +16,10 @@
 
     <%= render "shared/user_bar" %>
     <%= render partial: "shared/app_nav", locals: { style: 'app-nav'} %>
-    <div class="cover-container">
+    <div class="container cover-container">
 
-      <div class="row">
-        <%= yield %>
-      </div>
+      <%= yield %>     <!--  yield contains .app-card-container for About and Contact or .inner, .cover for home-->
+
       <%= video_tag(
         'portfolio_bg_vid_medium.mp4',
         id: 'background',

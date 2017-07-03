@@ -59,8 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: top;
 }
 .cover-container {
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 10rem;
 }
 
 /* Padding for spacing */
@@ -192,27 +191,36 @@ h1, h2, h3, h4, h5, h6 {
   float: none;
 }
 
+/* Nav links */
+
+
 .app-nav {
-  // add color/style rules from nav-purple
-  top: 42px;
-  position: absolute;
-  width: 100%;
-  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0;
   li {
-    font-size: 1.4rem;
+    font-size: 24px;
     margin-left: 20px;
-    a {
-      padding-top: 5px;
-      padding-bottom: 3px;
-      transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      &:hover {
-        transform: translateY(-5px) rotate(2deg);
-      }
-    }
   }
 }
 
-.app-nav .nav-link.active {
+.nav-link {
+  position: relative;
+  padding: 1rem;
+  font-weight: 500;
+  color: #fff;
+  transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: white;
+  background-color: transparent;
+  transform: scale(1.2) rotate(2deg);
+}
+
+.nav-link.active {
   color: rgb(240, 190,115);
   border-bottom: 1px solid rgb(240, 190,115);
   &:hover {
@@ -305,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.navbar-brand {
+a.navbar-brand {
   font-size: 2rem;
   margin-top: -10px;
   margin-left: 6%;
@@ -360,29 +368,18 @@ h1, h2, h3, h4, h5, h6 {
   margin: 400px auto 0;
 }
 
-@media (max-width: 30em) {
-  .cover-container {
-    margin-top: 165px;
-  }
-}
-
-@media (min-width: 30em) {
-  .cover-container {
-    margin-top: 165px;
-  }
-  .app-footer {
-    margin-top: auto;
-  }
-}
-
 @media (min-width: 40em) {
   .app-nav {
     margin-left: 0;
+    margin-top: 42px;
   }
 }
 
 @media (min-width: 62em) {
-  .app-nav ul {
-    margin-left: 35%;
+  .app-nav {
+    margin-top: 42px;
+    ul {
+      margin-left: 35%;
+    }
   }
 }

@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link:focus {
   color: white;
   background-color: transparent;
-  transform: translateY(-5px );
+  transform: scale(1.2) rotate(2deg);
 }
 
 /* Active state gets a caret at the bottom */
@@ -137,10 +137,6 @@ a.navbar-brand {
   padding-top: 45px;
 }
 
-.navbar-brand {
-  font-size: 2rem;
-}
-
 .user-bar {
   background: image-url('graphic_strip.png') no-repeat;
   position: relative;
@@ -162,7 +158,8 @@ a.navbar-brand {
   background: rgb(55,34,91);
   padding-bottom: 0;
   li {
-    font-size: 1.4rem;
+    font-size: 24px;
+    margin-left: 20px;
   }
 }
 

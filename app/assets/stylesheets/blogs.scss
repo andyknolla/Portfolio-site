@@ -61,7 +61,7 @@ h6, .h6 {
 .nav-link:focus {
   color: white;
   background-color: transparent;
-  transform: translateY(-5px ) rotate(2deg);
+  transform: scale(1.2) rotate(2deg);
 }
 
 /* Active state gets a caret at the bottom */
@@ -230,7 +230,8 @@ h6, .h6 {
   background: rgb(55,34,91);
   padding-bottom: 0;
   li {
-    font-size: 1.4rem;
+    font-size: 24px;
+    margin-left: 20px;
   }
 }
 

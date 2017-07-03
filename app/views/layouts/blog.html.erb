@@ -16,10 +16,11 @@
   <body>
     <%= render "shared/user_bar" %>
     <%= render partial: 'shared/app_nav', locals: { style: 'blog-nav'} %>
-    <%= render 'shared/blog_masthead' %>
+    <%= render 'shared/blog_masthead' unless logged_in?(:site_admin) %>
 
     <div class="container">
       <div class="row">
+        <!--  yield contains .blog-main and cols  -->
         <%= yield %>
         <%= render 'shared/blog_sidebar' %>
       </div>
