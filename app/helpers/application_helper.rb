@@ -64,6 +64,7 @@ module ApplicationHelper
   end
 
   def nav_style_helper style
+    puts 'style passed'
     style
   end
 
