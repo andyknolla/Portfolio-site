@@ -25,8 +25,14 @@
     background: linear-gradient( rgba(255,255,255,0.8), rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.3) 50% );
   }
   a {
-    color: black;
+    color: rgb(162,103,24);
     transition: .2s ease;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+    &:hover {
+      text-shadow: 2px 2px .7px rgb(156,155,155);
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
 }
 
@@ -77,13 +83,6 @@
 .landing-image {
   width: 100%;
   padding-bottom: 30px;
-}
-
-.github-link {
-  color: black;
-  &:hover {
-    cursor: grab;
-  }
 }
 
 .user-bar {
