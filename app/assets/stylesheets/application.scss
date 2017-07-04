@@ -168,6 +168,10 @@ h1, h2, h3, h4, h5, h6 {
  * Custom styles
  */
 
+.cover-container {
+  padding-top: 4vh;
+}
+
 .card-block {
   color: black;
   text-align: left;
@@ -265,7 +269,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-content {
   padding-left: 30px;
-  font-size: 1.3rem;
   font-weight: 600;
   text-shadow: none;
 }
@@ -289,6 +292,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cover-subheading {
   font-size: 1.5rem;
+  padding-bottom: 25px;
 }
 
 #playVid {
@@ -316,7 +320,6 @@ a.navbar-brand {
 
 .contact-info p {
   text-shadow: none;
-  font-size: 1.2rem;
   font-weight: 600;
   margin-top: 1rem;
 }

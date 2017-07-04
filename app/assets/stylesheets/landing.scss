@@ -1,5 +1,6 @@
 .cover-container-home {
   margin: 5vh 0 200px;
+  padding-top: 25vh;
   width: 100%;
 }
 
@@ -11,17 +12,23 @@
 
 .landing-card-container {
   color: black;
-  font-size: 1.4rem;
-  text-align: left;
+  font-size: 1.1rem;
+  text-align: justify;
   text-shadow: none;
   .card {
-    padding: 40px;
-    background: linear-gradient( rgba(255,255,255,0.05), rgba(255,255,255,0.8), rgba(255,255,255,0.05) );
+    padding: 80px 0;
+    background: linear-gradient( rgba(255,255,255,0.8), rgba(255,255,255,0.05) );
   }
   a {
     color: black;
     transition: .2s ease;
   }
+}
+
+.landing-card-text {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 80px;
 }
 
 .landing-image {
@@ -30,8 +37,8 @@
 
 .github-link {
   color: black;
-  a:hover {
-    transform: scale(2);
+  &:hover {
+    cursor: grab;
   }
 }
 
@@ -42,4 +49,17 @@
 
 .app-nav {
   margin-top: 0;
+}
+
+.btn-landing {
+  padding: 5px 20px;
+  border: 1px solid white;
+  border-radius: 3px;
+  background: rgba(255,255,255,.2);
+  transition: all 1s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  &:hover {
+    text-decoration: none;
+    background: rgba(255,255,255,.6);
+    color: black;
+  }
 }

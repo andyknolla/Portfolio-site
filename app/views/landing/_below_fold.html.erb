@@ -1,11 +1,16 @@
 <div class='landing-card-container'>
   <div class='card'>
-    <h1>About Me</h1>
-    <hr>
-    <p>Thanks for visiting my page. </p>
-    <p class="github-link">First thing&apos;s first&hellip;<a href="https://github.com/andyknolla"><%= fa_icon 'github 2x' %></span> Check out my code on Github if interested.</a></p>
-    <p>Professional stuff first, of course.  I enjoy building things with code more than I ever liked fixing helicopters, welding or building high-speed compressors. I've been programming for a couple years now </p><br>
-    <p>If I’m not coding I’m usually either running trails, climbing rocks, or enjoying nature in some way.  I also like identifying birds and stars</p>
+    <div class="landing-card-text">
+      <p>To see my work, please check out the <%= link_to 'portfolio page', portfolios_path %>. Or go straight to my <a href="https://github.com/andyknolla"><span class="github-link">code on Github.&nbsp;<%= fa_icon 'github 2x' %></a></span></p>
+
+
+
+      <p>I built this site as one of my first Ruby on Rails projects.
+
+        <!-- Learn more about it <%= link_to 'here', portfolios_path %>.  -->
+
+        I've been coding since 2015 but didn't learn of the greatness of Ruby on Rails until 2017. Now I'm on a mission to become a Rails master in addition to a JavaScript ninja.</p>
+    </div>
     <div class="landing-image">
       <%= image_tag "climbing_photo.jpg", alt: "Scenic mountain image", class: 'landing-image' %>
     </div>
