@@ -1,18 +1,23 @@
 <div class='landing-card-container'>
   <div class='card'>
-    <div class="landing-card-text">
-      <p>To see my work, please check out the <%= link_to 'portfolio page', portfolios_path %>. Or go straight to my <a href="https://github.com/andyknolla"><span class="github-link">code on Github.&nbsp;<%= fa_icon 'github 2x' %></a></span></p>
 
 
+      <div class="landing-profile">
+        <!-- <div class="landing-headshot-container"> -->
+          <%= image_tag "landing-headshot.jpg", alt: "Profile photo", class: 'landing-headshot' %>
+        <!-- </div> -->
+        <div class="landing-profile-text">
+          <p>To see my work, check out the <%= link_to 'portfolio page', portfolios_path %>. Or go straight to my <a href="https://github.com/andyknolla"><span class="github-link">code on Github.&nbsp;<%= fa_icon 'github 2x' %></a></span></p>
 
-      <p>I built this site as one of my first Ruby on Rails projects.
+          <p>I built this site as one of my first Ruby on Rails projects.
 
-        <!-- Learn more about it <%= link_to 'here', portfolios_path %>.  -->
+            <!-- Learn more about it <%= link_to 'here', portfolios_path %>.  -->
 
-        I've been coding since 2015 but didn't learn of the greatness of Ruby on Rails until 2017. Now I'm on a mission to become a Rails master in addition to a JavaScript ninja.</p>
-    </div>
+            I've been coding since 2015 but didn't discover the greatness of Ruby on Rails until 2017. Now I'm on a mission to become a Rails master in addition to a JavaScript ninja.</p>
+        </div>
+      </div>
     <div class="landing-image">
-      <%= image_tag "climbing_photo.jpg", alt: "Scenic mountain image", class: 'landing-image' %>
+      <%= image_tag "yosemite_vista.jpg", alt: "Scenic mountain image", class: 'landing-image' %>
     </div>
   </div>
 </div>

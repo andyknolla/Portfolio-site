@@ -4,20 +4,25 @@
   width: 100%;
 }
 
-.below-fold {
-  width: 100%;
-  background: rgba(255,255,255, 0.5);
-  margin: 600px 0 300px;
+.landing-above-fold {
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.landing-greeting {
+
 }
 
 .landing-card-container {
+  margin-top: 8vh;
   color: black;
   font-size: 1.1rem;
   text-align: justify;
   text-shadow: none;
   .card {
-    padding: 80px 0;
-    background: linear-gradient( rgba(255,255,255,0.8), rgba(255,255,255,0.05) );
+    background: linear-gradient( rgba(255,255,255,0.8), rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.3) 50% );
   }
   a {
     color: black;
@@ -25,14 +30,53 @@
   }
 }
 
-.landing-card-text {
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 80px;
+.landing-profile {
+  margin: auto;
+  padding: 35px;
+  max-width: 61em;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // display: flex;
+  // flex-direction: row;
+}
+
+// .landing-headshot-container {
+// }
+
+.landing-headshot {
+  margin-right: 35px;
+  margin-bottom: 35px;
+  min-width: 200px;
+  width: 60%;
+  float: left;
+}
+
+.landing-profile-text {
+  clear: both;
+}
+
+@media(min-width: 42em) {
+  .landing-profile {
+    // flex-direction: column;
+  }
+  .landing-headshot-container {
+  }
+  .landing-headshot {
+    width: 40%;
+    max-width: 320px;
+    margin-bottom: -130px;
+    position: relative;
+    clear: right;
+  }
+  .landing-profile-text {
+    padding-left: 30px;
+    clear: none;
+  }
 }
 
 .landing-image {
   width: 100%;
+  padding-bottom: 30px;
 }
 
 .github-link {
@@ -56,10 +100,11 @@
   border: 1px solid white;
   border-radius: 3px;
   background: rgba(255,255,255,.2);
-  transition: all 1s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   &:hover {
     text-decoration: none;
     background: rgba(255,255,255,.6);
     color: black;
+    border: 1px solid rgba(255,255,255,.2);
   }
 }

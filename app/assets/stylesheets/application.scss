@@ -245,6 +245,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .app-footer {
   color: white;
+  margin-top: 5vh;
 }
 
 .tech-news {
@@ -295,6 +296,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 25px;
 }
 
+.vid-buttons {
+  position: fixed;
+}
+
 #playVid {
   display: none;
 }
@@ -306,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-content {
   display: flex;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   justify-content: flex-end;
   flex-direction: column;
   width: 100%;
@@ -376,4 +381,14 @@ a.navbar-brand {
       margin-left: 35%;
     }
   }
+}
+
+.home-vid-buttons {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 30px;
+}
+
+.pages-vid-buttons {
+  background: red;
 }
