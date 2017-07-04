@@ -64,15 +64,12 @@ h6, .h6 {
 
 /* Active state gets a caret at the bottom */
 .nav-link.active {
+  border-bottom: none;
   color: rgb(236,173,80);
   &:hover {
     transform: none;
     color: gray;
   }
-}
-.nav-link.active:after {
-  border-color: transparent;
-  border-bottom: none;
 }
 
 .nav-link.active:after {
@@ -223,7 +220,7 @@ h6, .h6 {
   background: rgb(55,34,91);
   padding-bottom: 0;
   li {
-    font-size: 24px;
+    font-size: 1.07em;
     margin-left: 20px;
   }
 }

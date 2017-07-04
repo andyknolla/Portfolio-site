@@ -1,6 +1,6 @@
 .cover-container-home {
   margin: 5vh 0 200px;
-  padding-top: 25vh;
+  padding-top: 12vh;
   width: 100%;
 }
 
@@ -16,13 +16,13 @@
 }
 
 .landing-card-container {
-  margin-top: 8vh;
+  margin-top: 18vh;
   color: black;
   font-size: 1.1rem;
   text-align: justify;
   text-shadow: none;
   .card {
-    background: linear-gradient( rgba(255,255,255,0.8), rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.3) 50% );
+    background: rgba(255,255,255,0.8);;
   }
   a {
     color: rgb(162,103,24);
@@ -40,17 +40,9 @@
   margin: auto;
   padding: 35px;
   max-width: 61em;
-  // padding-left: 20px;
-  // padding-right: 20px;
-  // display: flex;
-  // flex-direction: row;
 }
 
-// .landing-headshot-container {
-// }
-
 .landing-headshot {
-  margin-right: 35px;
   margin-bottom: 35px;
   min-width: 200px;
   width: 60%;
@@ -62,21 +54,29 @@
 }
 
 @media(min-width: 42em) {
-  .landing-profile {
-    // flex-direction: column;
-  }
-  .landing-headshot-container {
-  }
   .landing-headshot {
     width: 40%;
     max-width: 320px;
     margin-bottom: -130px;
+    margin-right: 35px;
     position: relative;
     clear: right;
   }
   .landing-profile-text {
     padding-left: 30px;
     clear: none;
+  }
+  .cover-container-home {
+    margin-top: 20vh;
+  }
+  .landing-card-container {
+    margin-top: 8vh;
+    .card {
+      background: linear-gradient( rgba(255,255,255,0.8), rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.3) 50% );
+    }
+  }
+  .home-vid-buttons {
+    margin-top: 0;
   }
 }
 
@@ -133,8 +133,8 @@
     transform:translateY(-15px);
   }
 }
-@media only screen {
+@media(min-width: 736px) {
   .vid-control {
-    display: block;
+    visibility: visible;
   }
 }
