@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0.3rem;
   padding-bottom: 0;
   li {
-    font-size: 24px;
+    font-size: 1.07em;
     margin-left: 20px;
   }
 }
@@ -297,7 +297,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vid-buttons {
-  position: fixed;
 }
 
 #playVid {
@@ -305,8 +304,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .vid-control {
-  display: flex;
-  align-self: flex-end;
+
 }
 
 .footer-content {
@@ -370,25 +368,23 @@ a.navbar-brand {
 @media (min-width: 40em) {
   .app-nav {
     margin-left: 0;
-    margin-top: 42px;
   }
 }
 
 @media (min-width: 62em) {
-  .app-nav {
-    margin-top: 42px;
-    ul {
-      margin-left: 35%;
-    }
+  .app-nav ul {
+    margin-left: 35%;
   }
 }
 
 .home-vid-buttons {
   display: flex;
-  align-self: flex-end;
+  justify-content: flex-end;
   margin-right: 30px;
 }
 
 .pages-vid-buttons {
-  background: red;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
