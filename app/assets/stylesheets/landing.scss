@@ -78,6 +78,9 @@
   .home-vid-buttons {
     margin-top: 0;
   }
+  .vid-control {
+    visibility: visible;
+  }
 }
 
 .landing-image {
@@ -133,7 +136,7 @@
     transform:translateY(-15px);
   }
 }
-@media(min-width: 736px) {
+@media(min-width: 800px) {
   .vid-control {
     visibility: visible;
   }
