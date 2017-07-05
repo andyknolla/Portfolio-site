@@ -16,7 +16,7 @@ class BlogsController < ApplicationController
 
   def show
     if logged_in?(:site_admin) || @blog.published?
-      @blog = Blog.includes(:comments).find(params[:id])
+      @blog = Blog.includes(:comments).friendly.find(params[:id])
       @comment = Comment.new
 
       @page_title = @blog.title
@@ -78,7 +78,7 @@ class BlogsController < ApplicationController
   private
 
   def set_blog
-    @blog = Blog.find(params[:id])
+    @blog = Blog.friendly.find(params[:id])
   end
 
   def blog_params

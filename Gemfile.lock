@@ -96,6 +96,8 @@ GEM
     ffi (1.9.18)
     font-awesome-rails (4.7.0.2)
       railties (>= 3.2, < 5.2)
+    friendly_id (5.2.1)
+      activerecord (>= 4.0.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     gritter (1.2.0)
@@ -264,6 +266,7 @@ DEPENDENCIES
   devise (~> 4.2, >= 4.2.1)
   dotenv-rails (~> 2.2, >= 2.2.1)
   font-awesome-rails (~> 4.7, >= 4.7.0.2)
+  friendly_id (~> 5.2.1)
   gritter (~> 1.2)
   jbuilder (~> 2.5)
   jquery-rails
