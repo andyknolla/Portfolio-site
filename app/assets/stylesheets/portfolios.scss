@@ -191,8 +191,10 @@ a.navbar-brand {
   padding-top: 7rem;
   .container {
     max-width: 31rem;
-    background: linear-gradient( rgba(185, 187, 179, 0.9) 50%, rgba(185, 187, 179, 0) );
+    background: linear-gradient( rgba(185, 187, 179, 0.9) 50%, rgba(185, 187, 179, 0.4) );
     padding: 15px;
+    padding-right: 20px;
+    margin-right: 2%;
     border-radius: 3px;
   }
 }
