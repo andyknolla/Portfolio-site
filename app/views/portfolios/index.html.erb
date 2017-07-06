@@ -1,6 +1,7 @@
 <div class="album text-muted portfolio-index">
   <div class="container portfolio-container">
-    <%= source_helper('alert alert-warning') %>
+    <%= source_helper('alert portfolio-source') %>
+    <div style="margin-bottom: 30px"><h2>Coming Soon!</h2>  <span style="">Second week of July 2017</span></div>
     <div class="row <%= 'sortable' if logged_in?(:site_admin) %>">
       <%= render partial: 'portfolio_item', collection: @portfolio_items %>
     </div>

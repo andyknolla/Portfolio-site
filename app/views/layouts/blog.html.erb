@@ -15,11 +15,13 @@
     <%= render "shared/user_bar" %>
     <%= render partial: 'shared/application_nav', locals: { style: 'blog-nav'} %>
     <%= render 'shared/blog_masthead' unless logged_in?(:site_admin) %>
+
     <div class="container">
+      <%=  source_helper('alert blog-source') %>
       <div class="row">
 
         <%= yield %>
-        
+
         <%= render 'shared/blog_sidebar' %>
       </div>
       <%= render 'shared/blog_footer' %>
