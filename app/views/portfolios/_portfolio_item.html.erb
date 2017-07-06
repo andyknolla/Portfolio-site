@@ -1,24 +1,24 @@
+<div class="row portfolio-item" data-id="<%= portfolio_item.id %>">
+  <div class="col-md-7">
+    <!-- <a href="<%= portfolio_show_path(portfolio_item) %>"> -->
+      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'main') %>
+    <!-- </a> -->
+  </div>
 
-
-
-
-<!--  From show.html.erb   minus 2 wrapping divs  -->
-
-<div class="col-md-7">
-  <%= image_tag portfolio_img(portfolio_item.thumb_image, 'main') %>
-</div>
-
-<div class="col-md-5 portfolio-item-desc">
-  <h1><%= portfolio_item.title %></h1>
-  <p class="portfolio-subtitle"><em><%= portfolio_item.subtitle %></em></p>
-  <p><%= portfolio_item.body %></p>
-  <h2>Technologies Used:</h2>
-  <% portfolio_item.technologies.each do |t| %>
-    <p><%= t.name %></p>
-  <% end %>
-  <% if logged_in?(:site_admin) %>
-    <div>
-      <%= link_to "Edit Item", edit_portfolio_path(portfolio_item), class: "btn btn-warning" %>
-    </div>
-  <% end %>
+  <div class="col-md-5 portfolio-item-desc">
+    <!-- <a href="<%= portfolio_show_path(portfolio_item) %>"> -->
+      <h2><%= portfolio_item.title %></h2>
+    <!-- </a> -->
+    <p class="portfolio-subtitle"><em><%= portfolio_item.subtitle %></em></p>
+    <p><%= portfolio_item.body %></p>
+    <h3>Technologies Used:</h3>
+    <% portfolio_item.technologies.each do |t| %>
+      <p><%= t.name %></p>
+    <% end %>
+    <% if logged_in?(:site_admin) %>
+      <div>
+        <%= link_to "Edit Item", edit_portfolio_path(portfolio_item), class: "btn btn-warning" %>
+      </div>
+    <% end %>
+  </div>
 </div>

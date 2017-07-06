@@ -116,8 +116,10 @@ footer p {
 /*****************     Custom Styles     *******************/
 
 a.navbar-brand {
-  color: black;
+  color: rgb(74,1,65);
   font-size: 2rem;
+  background: linear-gradient( rgba(185, 187, 179, 0), rgba(185, 187, 179, 0.8) 30%, rgba(185, 187, 179, 0) );
+  padding: 10px 5px;
 }
 
 .portfolio-form {
@@ -129,7 +131,7 @@ a.navbar-brand {
 }
 
 .portfolio-subheading {
-  color: black;
+  color: rgb(74,1,65);
   padding-top: 0.7rem;
 }
 
@@ -164,9 +166,9 @@ a.navbar-brand {
 }
 
 .btn.btn-primary, .btn.btn-secondary {
-  background: rgba(185, 187, 179, 0.7);
+  background: rgb(65,30,61);
   border: none;
-  color: black;
+  color: rgb(185, 187, 179);
 }
 .btn.btn-secondary {
   margin-left: 15px;
@@ -179,7 +181,20 @@ a.navbar-brand {
 .portfolio-container img {
   width: 70vw;
   max-width: 600px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
+}
+
+.portfolio-masthead {
+  background: image-url('gears.jpg') no-repeat;
+  background-size: cover;
+  margin-top: -73px;
+  padding-top: 7rem;
+  .container {
+    max-width: 31rem;
+    background: linear-gradient( rgba(185, 187, 179, 0.9) 50%, rgba(185, 187, 179, 0) );
+    padding: 15px;
+    border-radius: 3px;
+  }
 }
 
 @media (min-width: 30em) {
@@ -196,6 +211,15 @@ a.navbar-brand {
       width: 45vw;
     }
   }
+  .portfolio-masthead .container {
+    margin-right: 0;
+    text-align: right;
+    background: linear-gradient( to bottom left, rgba(185, 187, 179, 0.7) 50%, rgba(185, 187, 179, 0) );
+  }
+  .portfolio-subheading {
+    margin-left: auto;
+    width: 75%;
+  }
 }
 
 @media (min-width: 62em) {
@@ -210,22 +234,8 @@ a.navbar-brand {
   }
 }
 
-.portfolio-masthead {
-  background: image-url('gears.jpg') no-repeat;
-  background-size: cover;
-  margin-top: -73px;
-  padding-top: 7rem;
-  .container {
-    margin-right: 0;
-    max-width: 31rem;
-    background: linear-gradient( rgba(185, 187, 179, 0.7) 50%, rgba(185, 187, 179, 0) );
-    padding: 11px;
-    border-radius: 3px;
-  }
-}
-
 .jumbotron-heading {
-  color: black;
+  color: rgb(74,1,65);
   font-size: 3.5rem;
 }
 
@@ -233,14 +243,25 @@ a.navbar-brand {
   background: linear-gradient( rgba(185, 187, 179, 0.7) 50%, rgba(185, 187, 179, 0) );
 }
 
-.nav-link {
-  color: black;
+a.nav-link {
+  color: rgb(74,1,65);
+}
+a.nav-link.active {
+  color: rgb(106,116,1);
 }
 
 .nav-toggle {
-  color: black;
+  color: rgb(74,1,65);
 }
 
 .portfolio-index {
   background: linear-gradient( rgba(185, 187, 179, 0.7), rgb(255,255,255) 10% );
+}
+
+.portfolio-item {
+  margin-bottom: 4rem;
+  color: rgb(74,1,65);
+  a:hover {
+    color: rgb(74,1,65);
+  }
 }
