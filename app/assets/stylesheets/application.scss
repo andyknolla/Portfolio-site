@@ -36,7 +36,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  // text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('portfolio_bg_image.png') no-repeat;
+  background: image-url('landing-page-bg.png') no-repeat;
   background-size: cover;
 }
 
