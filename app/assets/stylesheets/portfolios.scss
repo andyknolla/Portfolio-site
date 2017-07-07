@@ -187,7 +187,6 @@ a.navbar-brand {
 .portfolio-masthead {
   background: image-url('gears.jpg') no-repeat;
   background-size: cover;
-  margin-top: -73px;
   padding-top: 7rem;
   .container {
     max-width: 31rem;
@@ -196,6 +195,15 @@ a.navbar-brand {
     padding-right: 20px;
     margin-right: 2%;
     border-radius: 3px;
+  }
+}
+
+@media (min-width: 992px) {
+  .portfolio-masthead {
+    margin-top: -73px;
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
   }
 }
 
@@ -227,12 +235,6 @@ a.navbar-brand {
 @media (min-width: 62em) {
   .portfolio-container img {
     width: 45vw;
-  }
-}
-
-@media (min-width: 62em) {
-  .nav-links {
-    margin-left: 35%;
   }
 }
 
