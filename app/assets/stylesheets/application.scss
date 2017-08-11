@@ -253,7 +253,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#background {
+#background-vid, #background-img {
   position: fixed;
   top:50%;
   left: 50%;
@@ -266,6 +266,10 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('landing-page-bg.png') no-repeat;
   background-size: cover;
+}
+
+#background-vid {
+  display: none;
 }
 
 .app-footer {
@@ -328,7 +332,7 @@ h1, h2, h3, h4, h5, h6 {
   visibility: hidden;
 }
 
-#playVid {
+#pauseVid {
   display: none;
 }
 
