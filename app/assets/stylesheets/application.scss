@@ -444,3 +444,20 @@ a.navbar-brand {
     visibility: hidden;
   }
 }
+
+
+.registration {
+  padding-right: 20px;
+  padding-top: 7px;
+  // color: rgba(255,255,255,0.4);
+  animation:
+  fade 10s ease infinite,
+}
+@keyframes fade {
+  0%, 100% {
+    color: rgba(255,255,255,0.4);
+  }
+  30%,70% {
+    color: rgba(255,255,255,0.0);
+  }
+}

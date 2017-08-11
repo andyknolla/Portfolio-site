@@ -1,25 +1,29 @@
-<div class="row portfolio-item" data-id="<%= portfolio_item.id %>">
-  <div class="col-md-7">
-    <!-- <a href="<%= portfolio_show_path(portfolio_item) %>"> -->
-      <%= image_tag portfolio_img(portfolio_item.thumb_image, 'main') %>
-    <!-- </a> -->
-  </div>
+<div class="row">
+  <div class="portfolio-item row" data-id="<%= portfolio_item.id %>">
+    <div class="col-md-7">
+      <!-- <a href="<%= portfolio_show_path(portfolio_item) %>"> -->
+        <%= image_tag portfolio_img(portfolio_item.thumb_image, 'main') %>
+      <!-- </a> -->
+    </div>
 
-  <div class="col-md-5 portfolio-item-desc">
-    <!-- <a href="<%= portfolio_show_path(portfolio_item) %>"> -->
-      <h2><%= portfolio_item.title %></h2>
-    <!-- </a> -->
-    <p class="portfolio-subtitle"><em><%= portfolio_item.subtitle %></em></p>
-    <p class="portfolio-subtitle"><em><a href="<%= portfolio_item.github_link %>" target="blank">Code on Github</a></em></p>
-    <p><%= portfolio_item.body %></p>
-    <h3>Technologies Used:</h3>
-    <% portfolio_item.technologies.each do |t| %>
-      <p><%= t.name %></p>
-    <% end %>
-    <% if logged_in?(:site_admin) %>
-      <div>
-        <%= link_to "Edit Item", edit_portfolio_path(portfolio_item), class: "btn btn-warning" %>
+    <div class="col-md-5 portfolio-item-desc">
+      <!-- <a href="<%= portfolio_show_path(portfolio_item) %>"> -->
+        <h2><%= portfolio_item.title %></h2>
+      <!-- </a> -->
+      <p class="portfolio-subtitle"><em><%= portfolio_item.subtitle %></em></p>
+      <p class="portfolio-subtitle"><em><a href="<%= portfolio_item.github_link %>" target="blank">Code on Github</a></em></p>
+      <p><%= portfolio_item.body %></p>
+      <h3>Technologies Used:</h3>
+      <div class="row">
+        <% portfolio_item.technologies.each do |t| %>
+          <p class="col-md-4"><%= t.name %></p>
+        <% end %>
       </div>
-    <% end %>
+      <% if logged_in?(:site_admin) %>
+        <div>
+          <%= link_to "Edit Item", edit_portfolio_path(portfolio_item), class: "btn btn-warning" %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
