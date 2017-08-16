@@ -200,7 +200,7 @@ h6, .h6 {
 }
 
 .user-bar {
-  background: image-url('graphic_strip.png') no-repeat;
+  background: image-url('graphic_strip2.png') no-repeat;
   position: relative;
   margin-bottom: auto;
 }
@@ -234,8 +234,10 @@ h6, .h6 {
   transition: .3s ease;
 }
 
-.blog-main p {
-  text-align: left;
+.blog-main {
+  p, ul, ol {
+    text-align: left;
+  }
 }
 
 .blog-post-title > a:hover {
