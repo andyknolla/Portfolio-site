@@ -234,6 +234,10 @@ h6, .h6 {
   transition: .3s ease;
 }
 
+.blog-main p {
+  text-align: left;
+}
+
 .blog-post-title > a:hover {
   text-shadow: 3px 3px 3px darkgray;
   text-decoration: none;
@@ -242,6 +246,7 @@ h6, .h6 {
 .blog-post :last-child {
   text-align: left;
 }
+
 
 .blog-header a, .breadcrumb-item {
   color: rgb(55,34,91);
