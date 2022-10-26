@@ -80,6 +80,5 @@ test:
 #
 production:
   <<: *default
-  database: AndyKPortfolio_production
-  username: AndyK 
-  password: <%= ENV['DEVCAMPPORTFOLIO_DATABASE_PASSWORD'] %>
+  database: enigmatic-refuge-38901_production
+  # password: <%= ENV['DEVCAMPPORTFOLIO_DATABASE_PASSWORD'] %>
