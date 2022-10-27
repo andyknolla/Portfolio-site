@@ -12,7 +12,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    # <%= render "shared/user_bar" %>
+    <%= render "shared/user_bar" %>
     <%= render partial: 'shared/application_nav', locals: { style: 'blog-nav'} %>
     <%= render 'shared/blog_masthead' unless logged_in?(:site_admin) %>
 
