@@ -1,0 +1,3 @@
+# Personal notes
+## 2022 updates
+My heroku account was locked at some point in the time since I last worked with this app. After a few back and forths with Heroku support, the account was reactivated but in order to not waste time, I created a new Heroku account with my yahoo account. I was able to get the site working on the Heroku supplied domain (almost forgot the database migrate steps). On Oct 28, 2022 I purchased andyknolla.dev (andyknolla.com was available but preferred .dev).
