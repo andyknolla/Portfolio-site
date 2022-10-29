@@ -51,7 +51,7 @@ h6, .h6 {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #fff;
+  color: #251d1d;
   transition: .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -65,7 +65,7 @@ h6, .h6 {
 /* Active state gets a caret at the bottom */
 .nav-link.active {
   border-bottom: none;
-  color: rgb(236,173,80);
+  color: #483925;
   &:hover {
     transform: none;
     color: gray;
@@ -200,7 +200,6 @@ h6, .h6 {
 }
 
 .user-bar {
-  background: image-url('graphic_strip2.png') no-repeat;
   position: relative;
   margin-bottom: auto;
 }
@@ -217,7 +216,6 @@ h6, .h6 {
   margin-bottom: 35px;
   margin-top: 0;
   padding-top: 0.3rem;
-  background: rgb(55,34,91);
   padding-bottom: 0;
   li {
     font-size: 1.07em;
