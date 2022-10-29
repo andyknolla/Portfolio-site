@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('Monet_background') no-repeat;
+  background: image-url('Monet_siene') no-repeat;
   background-size: cover;
 }
 
@@ -385,7 +385,6 @@ a.navbar-brand {
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  background: rgba(27,27,27, 0.6);
   .user-bar-items {
     display: flex;
     justify-content: flex-end;
@@ -393,7 +392,7 @@ a.navbar-brand {
   }
   .login-link {
     margin-left: 15px;
-    color: rgb(238,238,238);
+    color: #3e3d3d;
     padding-top: 3px;
     transition: .2s ease;
     &:hover {
@@ -405,7 +404,7 @@ a.navbar-brand {
     margin-right: 25px;
   }
   .welcome {
-    color: rgb(238,238,238);
+    color: #3e3d3d;
   }
 }
 
