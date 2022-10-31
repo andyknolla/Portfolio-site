@@ -81,7 +81,6 @@
 
 .landing-image {
   width: 100%;
-  padding-bottom: 30px;
   // min-width: 100%;
   // min-height: 100%;
   // width: auto;
@@ -100,9 +99,7 @@
 
 .btn-landing {
   padding: 5px 20px;
-  border: 1px solid white;
   border-radius: 3px;
-  background: rgba(255,255,255,.2);
   transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
   &:hover {
     text-decoration: none;

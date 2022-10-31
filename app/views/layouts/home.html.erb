@@ -19,16 +19,6 @@
         <div class="cover-container cover-container-home">
           <div id="background-img"></div>
 
-          <%= video_tag(
-            'portfolio_bg_vid_medium.mp4',
-            id: 'background-vid',
-            autoplay: false,
-            loop: true,
-            muted: true,
-            controls: true,
-          )
-          %>
-
           <%= yield %>
 
           <%= render "shared/application_footer" %>
