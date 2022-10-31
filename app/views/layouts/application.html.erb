@@ -16,15 +16,6 @@
     <%= render partial: "shared/application_nav", locals: { style: "app-nav"} %>
     <div class="container cover-container">
       <div id="background-img"></div>
-      <%= video_tag(
-        'portfolio_bg_vid_medium.mp4',
-        id: 'background-vid',
-        autoplay: false,
-        loop: true,
-        muted: true,
-        controls: true,
-      )
-      %>
 
       <%= yield %>
 

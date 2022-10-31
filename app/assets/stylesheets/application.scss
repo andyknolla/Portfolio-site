@@ -245,15 +245,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link.active {
-  color: rgb(240, 190,115);
-  border-bottom: 1px solid rgb(240, 190,115);
+  color: #422811;
+  border-bottom: 1px solid #422811;
   &:hover {
     transform: none;
-    color: gray;
+    color: #d9a766;
   }
 }
 
-#background-vid, #background-img {
+#background-img {
   position: fixed;
   top:50%;
   left: 50%;
@@ -266,10 +266,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('Monet_siene') no-repeat;
   background-size: cover;
-}
-
-#background-vid {
-  display: none;
 }
 
 .app-footer {
@@ -292,8 +288,9 @@ h1, h2, h3, h4, h5, h6 {
   color: black;
   text-align: left;
   .card {
+    background: none;
+    border: none;
     padding: 40px;
-    background: rgba(232,222,255,0.75);
   }
   h1 {
     padding-bottom: 20px;
@@ -391,9 +388,8 @@ a.navbar-brand {
     padding: 4px 40px 3px 0;
   }
   .login-link {
-    margin-left: 15px;
-    color: #3e3d3d;
-    padding-top: 3px;
+    color: #fff;
+    padding-top: 4px;
     transition: .2s ease;
     &:hover {
       transform: scale(1.2);
@@ -404,7 +400,7 @@ a.navbar-brand {
     margin-right: 25px;
   }
   .welcome {
-    color: #3e3d3d;
+    color: #fff;
   }
 }
 
