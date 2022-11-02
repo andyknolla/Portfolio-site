@@ -18,7 +18,7 @@
   text-align: justify;
   text-shadow: none;
   .card {
-    background: rgba(255,255,255,0.8);;
+    background: rgba(255,255,255,0.4);;
   }
   a {
     color: rgb(162,103,24);
@@ -35,7 +35,7 @@
 .landing-profile {
   margin: auto;
   padding: 35px;
-  max-width: 61em;
+  max-width: 70em;
 }
 
 .landing-headshot {
@@ -47,6 +47,7 @@
 
 .landing-profile-text {
   clear: both;
+  color: #454545;
   font-family: 'geomanist-regular'
 }
 
@@ -69,7 +70,8 @@
   .landing-card-container {
     margin-top: 8vh;
     .card {
-      background: linear-gradient( rgba(255,255,255,0.8), rgba(255,255,255,0.8) 20%, rgba(255,255,255,0.3) 50% );
+      border: none;
+      background: linear-gradient( rgba(255,255,255,0.2), rgba(255,255,255,0.4) 20%, rgba(255,255,255,0.8) 50% );
     }
   }
   .home-vid-buttons {
