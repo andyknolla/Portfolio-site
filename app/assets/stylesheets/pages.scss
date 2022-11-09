@@ -1,9 +1,10 @@
 .about-me-header {
+  color: hsl(0, 0%, 100%);
   display: flex;
   justify-content: space-between;
   .resume {
-    color: black;
-    border: 1px solid rgb(90,90,90);
+    color: hsl(0, 0%, 0%);
+    border: 1px solid hsl(0, 0%, 35%);
     font-size: 1.2em;
     font-weight: 700;
     letter-spacing: 2px;
@@ -16,9 +17,8 @@
     transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     &:hover {
       text-decoration: none;
-      // background: rgb(255,255,255);
-      color: rgb(90,90,90);
-      border: 1px solid rgba(255,255,255,.2);
+      color: hsl(0, 0%, 35%);
+      border: 1px solid hsla(0, 0%, 100%, 0.2);
     }
   }
 }

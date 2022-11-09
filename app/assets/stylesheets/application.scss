@@ -19,17 +19,17 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
 }
 
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: hsl(0, 0%, 20%);
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: hsl(0, 0%, 100%);
+  border: .05rem solid hsl(0, 0%, 100%);
 }
 
 /*
@@ -42,7 +42,7 @@ body {
   font-family: 'Geomanist-light', sans-serif;
 }
 body {
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-align: center;
 }
 
@@ -88,14 +88,14 @@ h1, h2, h3, h4, h5, h6 {
 .nav-masthead .nav-link {
   padding: .25rem 0;
   font-weight: bold;
-  color: rgba(255,255,255,.5);
+  color: hsla(0, 0%, 100%, 0.5);
   background-color: transparent;
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255,255,255,.25);
+  border-bottom-color: hsla(0, 0%, 100%, 0.25);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -103,8 +103,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
+  color: hsl(0, 0%, 100%);
+  border-bottom-color: hsl(0, 0%, 100%);
 }
 
 @media (min-width: 48em) {
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 
 .mastfoot {
-  color: rgba(255,255,255,.5);
+  color: hsla(0, 0%, 100%, 0.5);
 }
 
 /*
@@ -179,12 +179,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-block {
-  color: black;
+  color: hsl(0, 0%, 0%);
   text-align: left;
 }
 
 .auth-links a {
-  color: black;
+  color: hsl(0, 0%, 0%);
 }
 
 .register-text {
@@ -198,11 +198,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-content a, .contact-info a, .portfolio-item a {
-  color: rgb(162,103,24);
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  color: hsl(34, 74%, 36%);
+  text-shadow: 0 0.05rem 0.1rem hsla(0, 0%, 0%, 0.5);
   transition: .2s ease;
   &:hover {
-    text-shadow: 2px 2px 1px rgb(170,170,170);
+    text-shadow: 2px 2px 1px hsl(0, 0%, 67%);
     text-decoration: none;
     cursor: pointer;
   }
@@ -210,14 +210,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-info {
   a {
-   color: rgb(53,53,53);
+    color: hsl(0, 0%, 21%);
   }
-   li {
-     list-style-type: none;
-   }
-   ul {
-     padding-left: 0;
-   }
+  li {
+    list-style-type: none;
+  }
+  ul {
+    padding-left: 0;
+  }
 }
 
 
@@ -238,23 +238,23 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   padding: 1rem;
   font-weight: 500;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   transition: .2s ease-in
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #ffe5e5;
+  color: hsl(0, 100%, 95%);
   background-color: transparent;
   transform: scale(1.1);
 }
 
 .nav-link.active {
-  color: #422811;
-  border-bottom: 1px solid #422811;
+  color: hsl(28, 59%, 16%);
+  border-bottom: 1px solid hsl(28, 59%, 16%);
   &:hover {
     transform: none;
-    color: #ffe5e5;
+    color: hsl(0, 100%, 95%);
   }
 }
 
@@ -274,15 +274,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app-footer {
-  color: white;
+  color: hsl(0, 0%, 100%);
   margin-top: 5vh;
 }
 
 .tech-news {
-  color: black;
+  color: hsl(0, 0%, 0%);
   margin: 20px;
   a {
-    color: green;
+    color: hsl(120, 100%, 25%);
   }
   .card {
     padding: 20px;
@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app-card-container {
-  color: black;
+  color: hsl(0, 0%, 0%);
   text-align: left;
   .card {
     background: none;
@@ -317,8 +317,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn.btn-primary {
-  background: rgb(30,73,150);
-  border-color: rgb(30,73,150);
+  background: hsl(219, 67%, 35%);
+  border-color: hsl(219, 67%, 35%);
 }
 
 .cover-heading {
@@ -373,7 +373,7 @@ a.navbar-brand {
 
 .contact-info .fa {
   margin-right: 14px;
-  color: rgb(53,53,53);
+  color: hsl(0, 0%, 21%);
 }
 
 .profile-image {
@@ -393,7 +393,7 @@ a.navbar-brand {
     padding: 4px 40px 3px 0;
   }
   .login-link {
-    color: #fff;
+    color: hsl(0, 0%, 100%);
     margin-left: 30px;
     transition: .2s ease;
     &:hover {
@@ -405,12 +405,12 @@ a.navbar-brand {
     margin-right: 25px;
   }
   .welcome {
-    color: #fff;
+    color: hsl(0, 0%, 100%);
   }
 }
 
 .nav-toggle {
-  color: rgb(238,238,238);
+  color: hsl(0, 0%, 93%);
   margin-top: -6px;
 }
 
@@ -451,15 +451,14 @@ a.navbar-brand {
 .registration {
   padding-right: 20px;
   padding-top: 7px;
-  // color: rgba(255,255,255,0.4);
   animation:
   fade 10s ease infinite,
 }
 @keyframes fade {
   0%, 100% {
-    color: rgba(255,255,255,0.4);
+    color: hsla(0, 0%, 100%, 0.4);
   }
   30%,70% {
-    color: rgba(255,255,255,0.0);
+    color: hsla(0, 0%, 100%, 0);
   }
 }
