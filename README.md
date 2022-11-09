@@ -2,7 +2,7 @@
 A Rails 5 app, a portfolio of my work, and a blog about web development.
 
 ## Synopsis
-This application is my personal site including a portfolio of my work. Go to http://andyknolla.com to check it out. In addition to a portfolio, it has a blog where I write about technology, learning experiences and resources.
+This application is my personal site including a portfolio of my work. Go to http://andyknolla.dev to check it out. In addition to a portfolio, it has a blog where I write about technology, learning experiences and resources.
 I
 ## Learning project
 I learned a TON in the process of building this app! My prior experience has been with JavaScript including React, Node and Express.js so I had plenty of unfamiliar problems to work through, such as working with gem sets, version incongruencies,
