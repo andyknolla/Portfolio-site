@@ -32,28 +32,12 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-/* Active state gets a caret at the bottom */
 .nav-link.active {
-  border-bottom: none;
-  color: hsl(36, 80%, 62%);
+  color: hsl(279, 35%, 64%);
   &:hover {
     transform: none;
     color: gray;
   }
-}
-.nav-link.active:after {
-  position: absolute;
-  color: hsl(0, 0%, 89%);
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent;
 }
 
 .navbar {
@@ -74,8 +58,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .jumbotron-heading {
   font-weight: 300;
-  font-size: 3rem;
-  color: hsl(262, 46%, 25%);
+  font-size: 3.5rem;
+  color: hsl(0, 0, 16%);
 }
 
 .jumbotron .container {
@@ -121,7 +105,7 @@ footer p {
 /*****************     Custom Styles     *******************/
 
 a.navbar-brand {
-  color: hsl(307, 97%, 15%);
+  color: hsl(0, 0, 16%);
   font-size: 2rem;
   padding: 10px 5px;
 }
@@ -135,7 +119,6 @@ a.navbar-brand {
 }
 
 .portfolio-subheading {
-  color: hsl(307, 97%, 15%);
   padding-top: 0.7rem;
 }
 
@@ -187,8 +170,7 @@ a.navbar-brand {
 }
 
 .portfolio-masthead {
-  background: image-url('gears.jpg') no-repeat;
-  background-size: cover;
+  background: hsl(0, 0%, 100%);
   padding-top: 7rem;
   .container {
     max-width: 31rem;
@@ -238,26 +220,11 @@ a.navbar-brand {
   }
 }
 
-.jumbotron-heading {
-  color: hsl(307, 97%, 15%);
-  font-size: 3.5rem;
-}
-
 a.nav-link {
   color: hsl(0, 0%, 27%);
-}
-a.nav-link.active {
-  color: hsl(65, 98%, 23%);
-}
-
-.nav-toggle {
-  color: hsl(307, 97%, 15%);
 }
 
 .portfolio-item {
   margin-bottom: 4rem;
-  color: hsl(307, 97%, 15%);
-  a:hover {
-    color: hsl(307, 97%, 15%);
-  }
+  color: hsl(0, 0, 16%);
 }

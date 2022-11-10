@@ -6,12 +6,6 @@
  * Globals
  */
 
-@media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
-}
-
 body {
   font-family: 'Geomanist-regular', sans-serif;
   color: hsl(0, 0%, 33%);
@@ -23,7 +17,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 30%);
   font-family: 'Geomanist-regular', sans-serif;
 }
 
@@ -57,34 +51,18 @@ h6, .h6 {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 70%);
   background-color: transparent;
-  transform: scale(1.2) rotate(2deg);
+  transform: scale(1.1);
 }
 
-/* Active state gets a caret at the bottom */
 .nav-link.active {
-  border-bottom: none;
   color: hsl(34, 32%, 21%);
+  color: hsl(164, 27%, 36%);
   &:hover {
     transform: none;
     color: hsl(0, 0%, 50%);
   }
-}
-
-.nav-link.active:after {
-  position: absolute;
-  color: hsl(0, 0%, 100%);
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid hsl(0, 0%, 100%);
-  border-left: .3rem solid transparent;
 }
 
 /*
@@ -103,7 +81,7 @@ h6, .h6 {
 }
 .blog-description {
   font-size: 1.1rem;
-  color: hsl(0, 0%, 60%);
+  color: hsl(164, 27%, 36%);
 }
 
 @media (min-width: 40em) {
@@ -200,6 +178,11 @@ h6, .h6 {
 }
 
 .user-bar {
+  .welcome, .login-link {
+    color: hsl(0, 0%, 27%);
+  }
+}
+.user-bar {
   position: relative;
   margin-bottom: auto;
 }
@@ -218,7 +201,7 @@ h6, .h6 {
   padding-top: 0.3rem;
   padding-bottom: 0;
   li {
-    font-size: 1.07em;
+    font-size: 1.2em;
     margin-left: 20px;
   }
 }
@@ -228,7 +211,7 @@ h6, .h6 {
 }
 
 .blog-post > .blog-post-title > a, .blog-main > h2, .blog-title {
-  color: hsl(262, 46%, 25%);
+  color: hsl(0, 0, 16%);
   transition: .3s ease;
 }
 
@@ -249,14 +232,14 @@ h6, .h6 {
 
 
 .blog-header a, .breadcrumb-item {
-  color: hsl(262, 46%, 25%);
+  color: hsl(0, 0, 16%);;
   transition: .3s ease;
   &:hover {
     text-shadow: 3px 3px 3px hsl(0, 0%, 66%);
   }
 }
 .sidebar-module a {
-  color: hsl(262, 65%, 45%);
+  color: hsl(164, 27%, 36%);
   transition: .3s ease;
   &:hover {
     text-shadow: 3px 3px 3px hsl(0, 0%, 66%);
