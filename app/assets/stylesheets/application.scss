@@ -39,7 +39,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  font-family: 'Geomanist-light', sans-serif;
+  font-family: 'Geomanist-regular', sans-serif;
 }
 body {
   color: hsl(0, 0%, 100%);
@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 0.3rem;
   padding-bottom: 0;
   li {
-    font-size: 1.07em;
+    font-size: 1.2em;
     margin-left: 20px;
   }
 }
@@ -417,7 +417,6 @@ a.navbar-brand {
 @media (min-width: 40em) {
   .app-nav {
     margin-left: 0;
-    margin-right: 5em;
   }
   .vid-control {
     visibility: visible;
@@ -460,5 +459,11 @@ a.navbar-brand {
   }
   30%,70% {
     color: hsla(0, 0%, 100%, 0);
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    justify-content: flex-end;
   }
 }
